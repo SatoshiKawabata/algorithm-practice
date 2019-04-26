@@ -2,9 +2,11 @@ const { myCountKdivPairs, countKdivPairs } = require("./count-pairs-in-array-who
 describe("count-pairs-in-array-whose-sum-is-divisible-by-k", () => {
   it ("myCountKdivPairs", () => {
     expect(myCountKdivPairs([2, 2, 1, 7, 5, 3], 4)).toEqual(5);
+    expect(myCountKdivPairs([2, 2, 2], 4)).toEqual(3);
     expect(myCountKdivPairs([5, 9, 36, 74, 52, 31, 42], 3)).toEqual(7);
   });
   it ("countKdivPairs", () => {
+    expect(myCountKdivPairs([2, 2, 2], 4)).toEqual(3);
     expect(countKdivPairs([2, 2, 1, 7, 5, 3], 4)).toEqual(5);
     expect(countKdivPairs([5, 9, 36, 74, 52, 31, 42], 3)).toEqual(7);
   });
